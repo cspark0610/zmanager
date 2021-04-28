@@ -19,5 +19,5 @@ export const updateZombie = async(req,res)=>{
     const updatedZombie = await zombieModel.findByIdAndUpdate(id, req.body , {new:true})
 
    res.status(204).json(updatedZombie)
-   //console.log(updatedPost);
+   
 }
