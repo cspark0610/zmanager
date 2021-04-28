@@ -13,6 +13,7 @@ for(let i=0; i <= 17; i++ ){
     zombieData.push({ zombieLocation: locations[randomIdx], image: `https://robohash.org/${Math.random()}?set=set2&size=180x180` })
 }
 
+console.log(zombieData);
 
 const seedDB = () => {
     zombieModel.deleteMany({}, (err) => {
