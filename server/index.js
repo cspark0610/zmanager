@@ -19,7 +19,7 @@ app.use(morgan('tiny'));
 
 app.use('/api/zombie',zombieRoutes);
 
-const CONNECTION_URL = 'mongodb+srv://carlos:plataforma5@cluster0.3azg9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const CONNECTION_URL = <USE your mongo URL connection>
 const PORT = process.env.PORT || 6000;
 
 mongoose.connect(CONNECTION_URL, {
